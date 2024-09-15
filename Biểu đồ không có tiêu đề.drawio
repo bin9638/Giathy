@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.14">
   <diagram name="Trang-1" id="ceG9faEYrsECwTV2T8dY">
-    <mxGraphModel dx="1660" dy="1458" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1411" dy="1299" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -199,7 +199,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="XvlHhUjO2qpqZn2nDD1E-2" value="Github action" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://miro.medium.com/v2/resize:fit:735/1*U56JIjUVBUVcUZRTA8RBXA.png;" vertex="1" parent="1">
+        <mxCell id="XvlHhUjO2qpqZn2nDD1E-2" value="Github action" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://miro.medium.com/v2/resize:fit:735/1*U56JIjUVBUVcUZRTA8RBXA.png;fontColor=#007FFF;" vertex="1" parent="1">
           <mxGeometry x="357.019041447469" y="389.36553883585736" width="108.640241879419" height="55.86604605261507" as="geometry" />
         </mxCell>
         <mxCell id="XvlHhUjO2qpqZn2nDD1E-3" value="Developer" style="shape=image;verticalLabelPosition=top;labelBackgroundColor=default;verticalAlign=bottom;aspect=fixed;imageAspect=0;image=https://static.vecteezy.com/system/resources/previews/002/206/015/non_2x/developer-working-icon-free-vector.jpg;fontFamily=Helvetica;fontSize=12;imageBorder=default;direction=east;comic=0;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;noLabel=0;labelPosition=center;align=center;" vertex="1" parent="1">
