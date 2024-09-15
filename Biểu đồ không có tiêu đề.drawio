@@ -210,7 +210,7 @@
             <mxPoint x="175.56726505533658" y="414.29366612065854" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XvlHhUjO2qpqZn2nDD1E-5" value="update code" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" edge="1" parent="1" source="XvlHhUjO2qpqZn2nDD1E-6">
+        <mxCell id="XvlHhUjO2qpqZn2nDD1E-5" value="update code" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=12;fontColor=#CCCC00;" edge="1" parent="1" source="XvlHhUjO2qpqZn2nDD1E-6">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="396.32361846245203" y="414.3005025125628" as="targetPoint" />
           </mxGeometry>
