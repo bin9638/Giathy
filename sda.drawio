@@ -1,26 +1,81 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.6">
-  <diagram name="Trang-1" id="GV8U6cnqcwkwbOuNpEV_">
-    <mxGraphModel dx="1411" dy="863" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net">
+  <diagram name="Class Diagram" id="classDiagram">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="cn-CdhzAHd9augoCKjeN-1" value="Author       " style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="86" y="149" width="253" height="242" as="geometry" />
+        <!-- Author -->
+        <mxCell id="Author" value="Author" style="shape=swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="180" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="cn-CdhzAHd9augoCKjeN-2" value="- authorId: string&lt;div&gt;&amp;nbsp;- name: string&amp;nbsp;&amp;nbsp;&lt;div&gt;- specialization:&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- phone: string&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cn-CdhzAHd9augoCKjeN-1">
-          <mxGeometry y="30" width="253" height="108" as="geometry" />
+        <mxCell id="AuthorAttributes" value="- authorId: string&#10;- name: string&#10;- specialization: string&#10;- phone: string" style="text;html=1;whiteSpace=wrap;html=1;" vertex="1" parent="Author">
+          <mxGeometry x="0" y="0" width="180" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="cn-CdhzAHd9augoCKjeN-3" value="+ getId(): string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cn-CdhzAHd9augoCKjeN-1">
-          <mxGeometry y="138" width="253" height="104" as="geometry" />
+        <mxCell id="AuthorMethods" value="+ getId(): string" style="text;html=1;whiteSpace=wrap;html=1;" vertex="1" parent="Author">
+          <mxGeometry x="0" y="70" width="180" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="cn-CdhzAHd9augoCKjeN-5" value="Paper               " style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="418" y="163" width="253" height="242" as="geometry" />
+        <!-- Paper -->
+        <mxCell id="Paper" value="Paper" style="shape=swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="240" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="cn-CdhzAHd9augoCKjeN-6" value="- authorId: string&lt;div&gt;&amp;nbsp;- name: string&amp;nbsp;&amp;nbsp;&lt;div&gt;- specialization:&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- phone: string&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cn-CdhzAHd9augoCKjeN-5">
-          <mxGeometry y="30" width="253" height="108" as="geometry" />
+        <mxCell id="PaperAttributes" value="- paperId: string&#10;- title: string&#10;- doi: string&#10;- year: int&#10;- mainAuthor: Author&#10;- coAuthors: vector&lt;Author&gt;&#10;- category: Category*&#10;- isResearchProd: bool" style="text;html=1;whiteSpace=wrap;html=1;" vertex="1" parent="Paper">
+          <mxGeometry x="0" y="0" width="240" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="cn-CdhzAHd9augoCKjeN-7" value="+ getId(): string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cn-CdhzAHd9augoCKjeN-5">
-          <mxGeometry y="138" width="253" height="104" as="geometry" />
+        <mxCell id="PaperMethods" value="+ calculateResearchHours(): double&#10;+ getMainAuthor(): Author&#10;+ getCoAuthors(): vector&lt;Author&gt;" style="text;html=1;whiteSpace=wrap;html=1;" vertex="1" parent="Paper">
+          <mxGeometry x="0" y="100" width="240" height="80" as="geometry" />
+        </mxCell>
+        <!-- Category -->
+        <mxCell id="Category" value="Category (Abstract)" style="shape=swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="60" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CategoryMethods" value="+ getResearchHours(): double" style="text;html=1;whiteSpace=wrap;html=1;" vertex="1" parent="Category">
+          <mxGeometry x="0" y="0" width="180" height="50" as="geometry" />
+        </mxCell>
+        <!-- JournalCategory -->
+        <mxCell id="JournalCategory" value="JournalCategory" style="shape=swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="180" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JournalCategoryAttributes" value="- type: string" style="text;html=1;whiteSpace=wrap;html=1;" vertex="1" parent="JournalCategory">
+          <mxGeometry x="0" y="0" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JournalCategoryMethods" value="+ getResearchHours(): double" style="text;html=1;whiteSpace=wrap;html=1;" vertex="1" parent="JournalCategory">
+          <mxGeometry x="0" y="30" width="180" height="50" as="geometry" />
+        </mxCell>
+        <!-- ConferenceCategory -->
+        <mxCell id="ConferenceCategory" value="ConferenceCategory" style="shape=swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="300" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ConferenceCategoryAttributes" value="- isCoreRanking: bool" style="text;html=1;whiteSpace=wrap;html=1;" vertex="1" parent="ConferenceCategory">
+          <mxGeometry x="0" y="0" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ConferenceCategoryMethods" value="+ getResearchHours(): double" style="text;html=1;whiteSpace=wrap;html=1;" vertex="1" parent="ConferenceCategory">
+          <mxGeometry x="0" y="30" width="180" height="50" as="geometry" />
+        </mxCell>
+        <!-- ResearchProject -->
+        <mxCell id="ResearchProject" value="ResearchProject" style="shape=swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="300" width="260" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ResearchProjectAttributes" value="- projectId: string&#10;- title: string&#10;- registrationDate: string&#10;- duration: int&#10;- acceptanceDate: string&#10;- papers: vector&lt;Paper&gt;&#10;- journalCounts: map&lt;string,int&gt;&#10;- conferenceCounts: map&lt;string,int&gt;" style="text;html=1;whiteSpace=wrap;html=1;" vertex="1" parent="ResearchProject">
+          <mxGeometry x="0" y="0" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ResearchProjectMethods" value="+ addPaper(paper: Paper): void&#10;+ isEligibleForAcceptance(): bool" style="text;html=1;whiteSpace=wrap;html=1;" vertex="1" parent="ResearchProject">
+          <mxGeometry x="0" y="100" width="260" height="80" as="geometry" />
+        </mxCell>
+        <!-- Relationships -->
+        <mxCell id="Relation1" edge="1" parent="1" source="Paper" target="Author">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Relation2" edge="1" parent="1" source="Paper" target="Category">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Relation3" edge="1" parent="1" source="Category" target="JournalCategory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Relation4" edge="1" parent="1" source="Category" target="ConferenceCategory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Relation5" edge="1" parent="1" source="ResearchProject" target="Paper">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
